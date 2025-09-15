@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.mainContato {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tituloContato {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.textoContato {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191c1f;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoImagem {
+    width: 50px;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.navLinks a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Efeito das Cores nos Links */
+.navLinks a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d00015;
+    transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after {
+    width: 100%;
+}
+
+.formularioContato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grupoFormulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.grupoFormulario input,
+.grupoFormulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.grupoFormulario input:focus,
+.grupoFormulario textarea:focus {
+    border-color: #d00015;
+    outline: none;
+}
+
+.btnEnviar {
+    background-color: #d00015;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnEnviar:hover {
+    background-color: rgb(170, 0, 17)
+}
