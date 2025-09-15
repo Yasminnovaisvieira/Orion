@@ -117,6 +117,10 @@ body {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.textAreaMensagem {
+    resize: none;
+}
+
 
 .grupoFormulario input:focus,
 .grupoFormulario textarea:focus {
