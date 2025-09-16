@@ -144,3 +144,119 @@ body {
 .btnEnviar:hover {
     background-color: rgb(170, 0, 17)
 }
+
+
+/* home */
+
+#imgBanner{
+    width: 100%;
+}
+
+.promocoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#imgPromocoes{
+    width: 80%;
+}
+
+.info-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#icon {
+    font-size: 1.2rem;
+}
+
+.divider {
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+}
+
+#titulo-categoria{
+    padding: 3rem ;
+}
+
+.containerProdutos{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.item-produtos{
+    height: 28rem;
+    width: 14rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.item-produtos img{
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.text1-produto{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.text2-produto{
+    font-size: 2rem;
+    color: #E2232C;
+}
+.text3-produto{
+    font-size: 0.8rem;
+}
+
+.estrelas i {
+    color: gold;
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+
+.comprar-produto{
+    height: 2.5rem;
+    width: 9.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #d00015;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+.comprar-produto:hover{
+    background-color: #DF3D38;
+    transform: scale(1.1);
+}
+
