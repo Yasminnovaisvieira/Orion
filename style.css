@@ -423,7 +423,7 @@ main h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 40px;
-    color: #4CAF50;
+    color: #000000;
 }
 
 .team-container {
@@ -435,7 +435,6 @@ main h1 {
 }
 
 .team-card {
-    background-color: #000000;
     border-radius: 10px;
     padding: 25px;
     width: 280px;
@@ -444,7 +443,7 @@ main h1 {
 
 .team-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 30px rgba(76, 175, 80, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .team-card img {
@@ -467,5 +466,6 @@ main h1 {
 }
 
 .team-card h3 {
-    color: #ffff;
+    color: #000;
 }
+
