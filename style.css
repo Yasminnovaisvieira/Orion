@@ -410,3 +410,62 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
+
+/*equipe*/
+
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-card {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(76, 175, 80, 0.2);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #ff0202;
+}
+
+.team-card h3 {
+    color: #ffff;
+}
