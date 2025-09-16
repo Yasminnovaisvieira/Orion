@@ -202,6 +202,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 2rem;
 }
@@ -468,4 +469,5 @@ main h1 {
 .team-card h3 {
     color: #000;
 }
+
 
