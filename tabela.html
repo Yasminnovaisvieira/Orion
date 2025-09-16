@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="img/Logo.svg" alt="Logo do Orion" class="logoImagem"/>
+                <span>Orion</span>
+            </a>
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tabela.html">Itens</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="espaco"></div>
+
+    <main class="container-tabela">
+    <h1 style="text-align:center;">Gerenciar Produtos</h1>
+
+    <div style="text-align: right; margin-bottom: 1rem;">
+        <button onclick="abrirPopup()" class="btn-add-round">+</button>
+    </div>
+
+    <table class="tabela-produtos">
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Desconto</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="img/whey.png" alt="Whey Protein"/></td>
+          <td>Whey Protein 970g</td>
+          <td>R$ 99,90</td>
+          <td>R$ 89,00</td>
+          <td>
+            <button class="btn-acao editar">Editar</button>
+            <button class="btn-acao excluir">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="img/wheySache.png" alt="Whey Protein Sache"/></td>
+          <td>Whey Protein Sache 970g</td>
+          <td>R$ 99,90</td>
+          <td>R$ 89,00</td>
+          <td>
+            <button class="btn-acao editar">Editar</button>
+            <button class="btn-acao excluir">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="img/creatina.png" alt="Whey Protein Sache"/></td>
+          <td>Creatina 300g</td>
+          <td>R$ 79,90</td>
+          <td>R$ 74,90</td>
+          <td>
+            <button class="btn-acao editar">Editar</button>
+            <button class="btn-acao excluir">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <div id="popup-adicionar" class="popup">
+    <div class="popup-conteudo">
+      <button class="fechar" onclick="fecharPopup()">X</button>
+      <h2>Adicionar Produto</h2>
+      <form class="form-popup">
+        <input type="text" placeholder="Nome do Produto" required />
+        <input type="text" placeholder="Preço" required />
+        <input type="text" placeholder="Preço com Desconto" />
+        <input type="number" placeholder="Nº de estrelas" />
+        <button type="submit" class="btn-salvar">Salvar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+  // Função para abrir o popup
+  function abrirPopup() {
+    document.getElementById("popup-adicionar").style.display = "flex";
+  }
+
+  // Função para fechar o popup
+  function fecharPopup() {
+    document.getElementById("popup-adicionar").style.display = "none";
+  }
+</script>
