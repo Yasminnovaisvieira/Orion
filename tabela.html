@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Tabela</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -52,15 +54,16 @@
             <button class="fechar" onclick="fecharPopup()">X</button>
             <h2>Adicionar Produto</h2>
             <form class="form-popup">
+                <input type="text" placeholder="URL da Imagem" />
                 <input type="text" placeholder="Nome do Produto" required />
                 <input type="text" placeholder="Preço" required />
                 <input type="text" placeholder="Preço com Desconto" />
-                <input type="number" placeholder="Nº de estrelas" />
                 <button type="submit" class="btn-salvar">Salvar</button>
             </form>
         </div>
     </div>
-    
-    <script src="js/carrega_dados.js"></script>
+
+    <script src="js/carregar_dados.js"></script>
 </body>
+
 </html>
