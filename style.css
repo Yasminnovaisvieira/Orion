@@ -168,11 +168,11 @@ body {
 
 /* home */
 
-#imgBanner{
+#imgBanner {
     width: 100%;
 }
 
-.promocoes{
+.promocoes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +182,7 @@ body {
     padding-bottom: 4rem;
 }
 
-#imgPromocoes{
+#imgPromocoes {
     width: 80%;
 }
 
@@ -213,11 +213,11 @@ body {
     background: #ccc;
 }
 
-#titulo-categoria{
-    padding: 3rem ;
+#titulo-categoria {
+    padding: 3rem;
 }
 
-.containerProdutos{
+.containerProdutos {
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -227,7 +227,7 @@ body {
     margin: 2rem;
 }
 
-.item-produtos{
+.item-produtos {
     height: 28rem;
     width: 14rem;
     border-radius: 2rem;
@@ -241,23 +241,25 @@ body {
     background-color: #ffffff;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin-top: 2rem 
+    margin-top: 2rem
 }
 
-.item-produtos img{
+.item-produtos img {
     max-width: 100%;
     max-height: 50%;
 }
 
-.text1-produto{
+.text1-produto {
     font-size: 1.2rem;
     font-weight: bold;
 }
-.text2-produto{
+
+.text2-produto {
     font-size: 2rem;
     color: #E2232C;
 }
-.text3-produto{
+
+.text3-produto {
     font-size: 0.8rem;
 }
 
@@ -268,7 +270,7 @@ body {
 }
 
 
-.comprar-produto{
+.comprar-produto {
     height: 2.5rem;
     width: 9.5rem;
     border: none;
@@ -277,7 +279,8 @@ body {
     color: #FFFFFF;
     transition: 0.3s ease;
 }
-.comprar-produto:hover{
+
+.comprar-produto:hover {
     background-color: #DF3D38;
     transform: scale(1.1);
 }
@@ -288,7 +291,7 @@ body {
     padding: 40px;
 }
 
-.container-tabela{
+.container-tabela {
     padding: 0 30px 0 30px;
 }
 
@@ -307,11 +310,11 @@ body {
 }
 
 .tabela-produtos td img {
-  width: 50px;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 .tabela-produtos th {
@@ -331,7 +334,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -368,7 +371,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     display: none;
     align-items: center;
     justify-content: center;
@@ -386,7 +389,7 @@ body {
     width: 90%;
     max-width: 400px;
     position: relative;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .popup-conteudo h2 {
@@ -490,7 +493,3 @@ main h1 {
 .team-card h3 {
     color: #000;
 }
-
-
-
-

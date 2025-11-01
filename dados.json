@@ -1,0 +1,20 @@
+[
+    {
+        "imagem": "img/whey.png",
+        "nome": "Whey Protein 970g",
+        "preco": "R$ 99,90",
+        "desconto": "R$ 89,00"
+    },
+    {
+        "imagem": "img/wheySache.png",
+        "nome": "Whey Protein Sache 970g",
+        "preco": "R$ 99,90",
+        "desconto": "R$ 89,00"
+    },
+    {
+        "imagem": "img/creatina.png",
+        "nome": "Creatina 300g",
+        "preco": "R$ 79,90",
+        "desconto": "R$ 74,90"
+    }
+]
