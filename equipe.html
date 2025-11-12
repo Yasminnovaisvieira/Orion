@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Equipe - Orion Fitness</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa Equipe - Orion Fitness</title>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/Logo.svg" alt="Logo do Orion" class="logoImagem" />
+        <span>Orion</span>
+      </a>
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="img/Logo.svg" alt="Logo do Orion" class="logoImagem" />
-                <span>Orion</span>
-            </a>
-            <ul class="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tabela.html">Itens</a></li>
-                <li><a href="equipe.html">Equipe</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+      <ul class="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tabela.html">Itens</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
 
-    <main class="container">
-        <h1>Nossa Equipe</h1>
+      <button id="theme-toggle" aria-label="Alternar modo escuro/claro">
+        <i class="bi bi-moon-fill" id="theme-icon"></i>
+      </button>
+    </nav>
+  </header>
 
-        <div class="team-container">
-            <div class="team-card">
-                <h3>Sara Giglio Trombaioli</h3>
-                <p>Matrícula: 202502515642</p>
-            </div>
-            <div class="team-card">
-                <h3>Carolina Pinheiro dos Santos</h3>
-                <p>Matrícula: 202503740623</p>
-            </div>
-            <div class="team-card">
-                <h3>Maria Eduarda Ferreira</h3>
-                <p>Matrícula: 202502219679</p>
-            </div>
-            <div class="team-card">
-                <h3>Yasmin Novais Vieira</h3>
-                <p>Matrícula: 202508386461</p>
-            </div>
-        </div>
-    </main>
+  <main class="container">
+    <h1>Nossa Equipe</h1>
 
+    <div class="team-container">
+      <div class="team-card">
+        <h3>Sara Giglio Trombaioli</h3>
+        <p>Matrícula: 202502515642</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Carolina Pinheiro dos Santos</h3>
+        <p>Matrícula: 202503740623</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Maria Eduarda Ferreira</h3>
+        <p>Matrícula: 202502219679</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Yasmin Novais Vieira</h3>
+        <p>Matrícula: 202508386461</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/modo_escuro.js" defer></script>
 </body>
-
 </html>

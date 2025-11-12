@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="img/Logo.svg" alt="Logo do Orion" class="logoImagem"/>
-                    <span>Orion</span>
-                </a>
-                <ul class="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tabela.html">Itens</a></li>
-                    <li><a href="equipe.html">Equipe</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script rel=""></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/Logo.svg" alt="Logo do Orion" class="logoImagem"/>
+        <span>Orion</span>
+      </a>
+      <ul class="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tabela.html">Itens</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <button id="theme-toggle" aria-label="Alternar modo escuro/claro">
+        <i class="bi bi-moon-fill" id="theme-icon"></i>
+      </button>
+    </nav>
+  </header>
 
         <main class="mainHome">
             <img src="./img/BannerOrion.svg" alt="Banner de suplementos Orion" id="imgBanner">
@@ -118,5 +123,7 @@
             </div>
 
         </main>
-    </body>
+
+  <script src="js/modo_escuro.js" defer></script>
+</body>
 </html>

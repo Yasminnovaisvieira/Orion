@@ -493,3 +493,176 @@ main h1 {
 .team-card h3 {
     color: #000;
 }
+
+/* Ajustes Modo Escuro (Home) */
+
+#theme-toggle {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+  }
+  
+  #theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  body.dark-mode .navbar {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark-mode .navLinks a {
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .navLinks a::after {
+    background-color: #ff4b5c;
+  }
+  
+ 
+  body.dark-mode .promocoes,
+  body.dark-mode .info-bar,
+  body.dark-mode .containerProdutos,
+  body.dark-mode main {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  body.dark-mode #titulo-categoria {
+    color: #ffffff;
+  }
+  
+
+  body.dark-mode .container,
+  body.dark-mode .item-produtos,
+  body.dark-mode .popup-conteudo,
+  body.dark-mode .team-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    color: #f1f1f1;
+  }
+  
+
+  body.dark-mode .btnEnviar,
+  body.dark-mode .comprar-produto,
+  body.dark-mode .btn-add-round {
+    background-color: #ff4b5c;
+    color: #fff;
+  }
+  
+  body.dark-mode .btnEnviar:hover,
+  body.dark-mode .comprar-produto:hover,
+  body.dark-mode .btn-add-round:hover {
+    background-color: #ff6b6b;
+  }
+  
+
+  body.dark-mode .text2-produto {
+    color: #ff4b5c;
+  }
+  
+
+  body.dark-mode #imgBanner {
+    filter: brightness(0.7) contrast(1.2);
+  }
+  
+
+  body.dark-mode .info-item {
+    color: #ddd;
+  }
+  
+  body.dark-mode .divider {
+    background: #444;
+  }
+  
+
+  :focus-visible {
+    outline: 3px solid #d00015;
+    outline-offset: 2px;
+  }
+  
+  body.dark-mode :focus-visible {
+    outline-color: #ff4b5c;
+  }
+  
+
+/* Ajustes Modo Escuro (Tabela) */
+
+body.dark-mode .tabela-produtos {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    border-color: #333;
+  }
+  
+  body.dark-mode .tabela-produtos th {
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
+  body.dark-mode .tabela-produtos td {
+    background-color: #1c1c1c;
+    color: #ddd;
+    border-color: #333;
+  }
+  
+
+  body.dark-mode .popup-conteudo {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode .popup .fechar {
+    color: #fff;
+  }
+  
+
+  body.dark-mode h1 {
+    color: #fff;
+  }
+  
+  body.dark-mode .btn-add-round {
+    background-color: #ff4b5c;
+  }
+  
+  body.dark-mode .btn-add-round:hover {
+    background-color: #ff6b6b;
+  }
+  
+/* Ajuste Modo Escuro (equipe) */
+
+body.dark-mode main {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode h1 {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .team-card {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    border: 1px solid #2a2a2a;
+  }
+  
+  body.dark-mode .team-card h3 {
+    color: #ff4b5c;
+  }
+  
+  body.dark-mode .team-card p {
+    color: #ddd;
+  }
+
+  

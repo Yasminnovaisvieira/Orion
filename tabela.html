@@ -1,69 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
-    <title>Tabela</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
+  <title>Tabela</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="img/Logo.svg" alt="Logo do Orion" class="logoImagem" />
-                <span>Orion</span>
-            </a>
-            <ul class="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tabela.html">Itens</a></li>
-                <li><a href="equipe.html">Equipe</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/Logo.svg" alt="Logo do Orion" class="logoImagem" />
+        <span>Orion</span>
+      </a>
+      <ul class="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tabela.html">Itens</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
 
-    <div class="espaco"></div>
+      <button id="theme-toggle" aria-label="Alternar modo escuro/claro">
+        <i class="bi bi-moon-fill" id="theme-icon"></i>
+      </button>
+    </nav>
+  </header>
 
-    <main class="container-tabela">
-        <h1 style="text-align:center;">Gerenciar Produtos</h1>
+  <div class="espaco"></div>
 
-        <div style="text-align: right; margin-bottom: 1rem;">
-            <button onclick="abrirPopup()" class="btn-add-round">+</button>
-        </div>
+  <main class="container-tabela">
+    <h1 style="text-align:center;">Gerenciar Produtos</h1>
 
-        <table class="tabela-produtos">
-            <thead>
-                <tr>
-                    <th>Imagem</th>
-                    <th>Nome</th>
-                    <th>Preço</th>
-                    <th>Desconto</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </main>
-
-    <div id="popup-adicionar" class="popup">
-        <div class="popup-conteudo">
-            <button class="fechar" onclick="fecharPopup()">X</button>
-            <h2>Adicionar Produto</h2>
-            <form class="form-popup">
-                <input type="text" placeholder="URL da Imagem" />
-                <input type="text" placeholder="Nome do Produto" required />
-                <input type="text" placeholder="Preço" required />
-                <input type="text" placeholder="Preço com Desconto" />
-                <button type="submit" class="btn-salvar">Salvar</button>
-            </form>
-        </div>
+    <div style="text-align: right; margin-bottom: 1rem;">
+      <button onclick="abrirPopup()" class="btn-add-round" aria-label="Adicionar novo produto">+</button>
     </div>
 
-    <script src="js/carregar_dados.js"></script>
-</body>
+    <table class="tabela-produtos">
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Desconto</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </main>
 
+  <div id="popup-adicionar" class="popup" role="dialog" aria-modal="true" aria-labelledby="titulo-popup">
+    <div class="popup-conteudo">
+      <button class="fechar" onclick="fecharPopup()" aria-label="Fechar formulário">X</button>
+      <h2 id="titulo-popup">Adicionar Produto</h2>
+      <form class="form-popup">
+        <input type="text" placeholder="URL da Imagem" aria-label="URL da Imagem" />
+        <input type="text" placeholder="Nome do Produto" required aria-label="Nome do Produto" />
+        <input type="text" placeholder="Preço" required aria-label="Preço" />
+        <input type="text" placeholder="Preço com Desconto" aria-label="Preço com Desconto" />
+        <button type="submit" class="btn-salvar">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/modo_escuro.js" defer></script>
+  <script src="js/carregar_dados.js" defer></script>
+</body>
 </html>
